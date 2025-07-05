@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  API Producción Solar </title>
+     <!--Aplicando estilo a una estructura responsivo de tres columnas -->
+ <link rel="stylesheet" href="./style-solar.css" type="text/css"  >
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <h3> Calculador Producción Solar - APIs </h3>  
+   <p>Los scripts y ejercicios se encuentran en el Libro 5 -
+    Programando Paso a Paso y Más a la venta en Amazon.</p>
+</header>
+<!--2 Divisiones responsives-->
+<div class="wrapper"> 
+    <div class="column"> <!-- Primera división -->
+        <h3 class="subcapitulo1">API en una arquitectura modular</h3>
+<h3 class="subcapitulo2"> Calculador básico de la producción solar, en kWh.</h3>
+
+<p><b>Algoritmos en JavaScript desarrolado en ambiente Node.js y Express.</b><br>
+Para saber más de esta práctica, consultar el Libro 5 - Instructivo - 
+Programando Paso a Paso y Más.</p>
+
+<p><b>API Produccion Solar</b></p>
+<!--API Produccion Solar-->
+<form id="produccion-form">
+    <label for="area">Área: m2</label>
+    <input type="number" id="area" name="area" placeholder="area"  required>
+    <label for="irradiacion">Irradiación: kW/h-m2</label>
+    <input type="number" id="irradiacion" name="irradiacion" placeholder="irradiacion"  required>
+    <label for="eficiencia">Eficiencia: (0 y 1)</label>
+    <input type="number" id="eficiencia" name="eficiencia" placeholder="eficiencia" step="0.01" required>
+    <button type="submit">Calcular</button>
+</form>
+
+<h4> Resultado Producción Solar, kWh:</h4>
+<p id="resultadoSolar"></p>
+
+</div>
+
+    <div class="column"> <!-- Segunda división -->
+        <h3 class="subcapitulo1"> Descripción del producto.</h3>
+        <p><b>Descripción </b></p>
+        <p>Hemos desarrollado una versión inicial de esta herramienta para 
+            facilitar el cálculo de la producción de electricidad generada 
+            por colectores solares. Nuestro objetivo es expandir su estructura 
+            progresivamente, incorporando nuevas propiedades y métodos que optimicen 
+            su funcionalidad. Esto permitirá mejorar su utilidad en la toma de 
+            decisiones y en la determinación de parámetros clave 
+            para evaluar la viabilidad del uso de los paneles solares.</p>
+
+        <p><b>Utilidad</b></p>       
+        <p>Somos conscientes de que este tipo de herramienta, al simplificar cálculos 
+            complejos relacionados con el uso energético, puede tener un impacto significativo 
+            tanto a nivel local como global. Su utilidad va más allá de la automatización de 
+            procesos, ya que contribuye a la optimización de recursos, facilita la toma de 
+            decisiones y promueve el desarrollo sostenible en diversas comunidades</p>
+
+        <p><b>Beneficios </b></p>
+            <p><b><i>a) Impacto Global</i></b></p>
+            <p><b>•	Promoción de energías renovables:</b> Facilita el acceso a cálculos
+                precisos, incentivando la adopción de energía solar en diversas comunidades.<br>
+             <b> •	Optimización de recursos:</b> Permite a gobiernos, industrias y hogares 
+             evaluar la viabilidad de los paneles solares y mejorar su eficiencia.<br>
+            <b>•	Contribución a la lucha contra el cambio climático: </b>Al impulsar el 
+                uso de energías limpias, ayuda a reducir la dependencia 
+                de combustibles fósiles y disminuir emisiones de carbono.
+        </p>
+        <p><b><i>b) Beneficios para la Comunidad Local</i></b></p>
+        <p><b>•	Empoderamiento de usuarios y empresas: </b>Cualquier persona, sin necesidad 
+            de conocimientos avanzados, puede estimar su producción solar y tomar mejores 
+            decisiones energéticas.<br>
+        <b>•	Optimización de inversiones: </b> Ayuda a hogares y empresas a calcular 
+            con mayor precisión el retorno de inversión en sistemas solares.<br>
+        <b>•	Fomento del desarrollo sostenible: </b>Las ciudades pueden promover 
+            políticas energéticas basadas en información más accesible y concreta.
+        </p>
+
+
+ </div>
+
+</div>
+<footer>
+    <p>© 2025  Plantilla - APIs. (Cálculos Técnicos)</p>
+</footer>
+
+<script type="module" src="./nav-solar.mjs"></script>
+
+</body>
+</html>
