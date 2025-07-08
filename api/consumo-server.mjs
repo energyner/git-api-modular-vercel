@@ -17,7 +17,7 @@ app.use(express.json());
 app.get("/api/consumo-energetico", (req, res) => {
   console.log("Solicitud GET en /api/consumo-energetico");
   res.json({
-    mensaje: "Usa POST para calcular el consumo energético de equipos",
+    mensaje: "API Calculador Enrgetico activo - Usa POST para calcular el consumo energético de equipos",
   });
 });
 

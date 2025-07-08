@@ -11,6 +11,13 @@ app.use(express.json());
 
 // 2- RUTAS GET PARA CADA API
 
+app.get("/api/huella-carbono", (req, res) => {
+  console.log("Solicitud GET en /api/huella carbono");
+  res.json({
+    mensaje: "API Huella Carbono activa  - Usa POST para calcular Huella de Carbono",
+  });
+});
+
 
 console.log("3.1 - Calculando  huella-carbono ")
 // Ruta POST para calcular la huella de carbono

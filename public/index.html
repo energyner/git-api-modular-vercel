@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./main/css/main11.css" />
+    <link rel="stylesheet" href="./main/css/style-index.css" type="text/css" />
+    <!--LINK PARA PAGINAS RESPONSIVOS DE 3 COLUMNAS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Class 7</title>
+    <meta
+      name="description"
+      content="Explora soluciones con APIs avanzadas para desarrollo de aplicaciones interactivas. 
+Accede a datos climáticos, noticias y cálculos de fuentes externas. Optimiza la captura de datos y procesamiento 
+técnico con integraciones eficientes."
+    />
+
+    <meta
+      name="keywords"
+      content="APIs, desarrollo de aplicaciones, integración de datos, APIs climáticas, APIs de noticias, cálculos avanzados, APIs técnicas, procesamiento de datos, datos externos, 
+automatización API"
+    />
+
+    <meta name="author" content="René F. Ruano" />
+    <link rel="canonical" href="./index.html" />
+  </head>
+  <body>
+    <header class="header">
+      <div id="1">
+        <nav1 id="nav1"></nav1
+        ><!--Menu de navegacion-->
+      </div>
+
+      <div id="2">
+        <div class="maindos">
+          <h3>Class 7. Septima Parte</h3>
+          <p>
+            Los scripts de estos ejercicios se encuentran en el Libro 7
+            "Programando Paso a Paso y Más".
+          </p>
+          <h4>Los libros están a la venta en Amazon</h4>
+        </div>
+      </div>
+
+      <div id="3">
+        <div class="logo_1">
+          <img src="./main/img/loggo.png" alt="Energyner" />
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn" type="button">
+            <img src="./main/img/todas.png" alt="Menú de redes sociales" />
+          </button>
+          <div class="dropdown-content">
+            <nav2 id="nav2"></nav2>
+            <!--Menu de redes sociales  -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav><ul></ul></nav>
+    <!--2 Divisiones responsives-->
+    <div class="wrapper">
+      <div class="column">
+        <!-- Primera división -->
+        <h3 class="subcapitulo1">Energyner - Desarrollo de APIs en la nube</h3>
+        <h3>Despliegue en la plataforma Vercel</h3>
+        <p>Selecciona el calculador de interés:</p>
+        <ul>
+          <li>
+            <a href="./consumo/consumption.html" target="_blank"
+              >Calculadora de Consumo Energético</a
+            >
+          </li>
+          <li>
+            <a href="./footprint/footprint.html" target="_blank"
+              >Calculadora de Huella de Carbono</a
+            >
+          </li>
+          <li>
+            <a href="./solar//solar.html" target="_blank"
+              >Calculadora de Producción Solar</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <!-- Segunda división -->
+        <h3 class="subcapitulo1">APIs (para pruebas locales o uso directo):</h3>
+        <h3>Estas son las rutas base de tus APIs</h3>
+        <p>
+          Para ejecutar el sistema, necesitas poner a la escucha cada servidor   (GET/POST)
+        </p>
+        <ul>
+          <li>
+            <a
+              href="http://localhost:3006/api/consumo-energetico"
+              target="_blank"
+              >API Consumo Energético</a
+            >
+          
+          </li>
+          <li>
+            <a href="http://localhost:3008/api/huella-carbono" target="_blank"
+              >API Huella de Carbono</a
+            >
+           
+          </li>
+          <li>
+            <a href="http://localhost:3010/api/produccion-solar" target="_blank"
+              >API Producción Solar</a
+            >
+        
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+    <script>
+      window.onload = function () {
+        loadAll();
+      };
+    </script>
+    <script src="./main/js/menu_hamburger.js"></script>
+    <!--En esta pagina este script se coloca al final-->
+    <script src="./main/js/load_all.js">
+      /* incluye paginas exteriores*/
+    </script>
+
+    <!--  <script type="module" src="./nav-consumption.mjs"></script>-->
+  </body>
+</html>
