@@ -55,7 +55,7 @@ document.getElementById("consumo-form").addEventListener("submit", (event) => {
 
   // Realizar la solicitud al servidor
   // ¡Aquí está el cambio clave!
-  fetch("/api/consumo-energetico", {
+  fetch(`${window.location.origin}/api/consumo-energetico`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

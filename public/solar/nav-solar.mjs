@@ -50,8 +50,8 @@
 
 
 
-// 1- API produccion solar para despliegue online en Vercel
-// En tu archivo JavaScript para la API de Producción Solar (ej. nav-solar.mjs o similar)
+// 2- API produccion solar para despliegue online en Vercel
+
 
 document.getElementById('produccion-form').addEventListener('submit', (event) => {
     event.preventDefault(); // Evitar que el formulario recargue la página
@@ -62,7 +62,7 @@ document.getElementById('produccion-form').addEventListener('submit', (event) =>
 
     // Realizar la solicitud al servidor
     // ¡CAMBIO CLAVE AQUÍ! Usamos la ruta relativa.
-    fetch('/api/produccion-solar', {
+    fetch(`${window.location.origin}/api/produccion-solar`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -2,33 +2,31 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public"
-      }
-    },
+  "src": "public/(.*)",
+  "dest": "/public/$1"
+  },
     {
       "src": "api/*.mjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/consumo-energetico",
-      "dest": "/api/consumo-server.mjs"
-    },
-    {
-      "src": "/api/huella-carbono",
-      "dest": "/api/footprint-server.mjs"
-    },
-    {
-      "src": "/api/produccion-solar",
-      "dest": "/api/solar-server.mjs"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ]
+  {
+    "src": "/api/consumo-energetico",
+    "dest": "/api/consumo-server.mjs"
+  },
+  {
+    "src": "/api/huella-carbono",
+    "dest": "/api/footprint-server.mjs"
+  },
+  {
+    "src": "/api/produccion-solar",
+    "dest": "/api/solar-server.mjs"
+  },
+  {
+    "src": "/(.*)",
+    "dest": "/public/$1"
+  }
+]
+
 }

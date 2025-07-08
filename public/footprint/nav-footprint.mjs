@@ -85,7 +85,7 @@ document.getElementById("calcular").addEventListener("click", async function (ev
     try {
         // Enviar los datos al servidor
         // ¡CAMBIO CLAVE AQUÍ! Usamos la ruta relativa directamente.
-        const response = await fetch("/api/huella-carbono", {
+        const response = await fetch(`${window.location.origin}/api/huella-carbono`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
