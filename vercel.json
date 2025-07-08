@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/**/*",
+      "src": "public/index.html", 
       "use": "@vercel/static-build",
       "config": {
         "distDir": "public"
@@ -31,3 +31,6 @@
       "dest": "/public/$1"
     }
   ] }
+
+
+
