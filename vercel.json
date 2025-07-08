@@ -2,10 +2,6 @@
   "version": 2,
   "builds": [
     {
-  src": "api/*.mjs",
-  "use": "@vercel/node"
-  },
-    {
       "src": "api/*.mjs",
       "use": "@vercel/node"
     }
