@@ -36,7 +36,10 @@
 
 
 
-//ADAPTANDO EL SCRIPT A LA CONVENCION DE VERCEL---
+//DESPLIEGE EN LA NUBE EN LA PLATAFORMA VERCEL
+/**Eliminar express y app.listen del servidor para convertirlo en una función
+ * handler pura compatible con Vercel. También ajustar la lógica de frontend para mejorar
+ * validación, visualización y compatibilidad.*/
 
 import { calcularConsumoEnergetico } from "../calculations/energy-consumption.mjs";
 

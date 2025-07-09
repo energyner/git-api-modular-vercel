@@ -246,33 +246,37 @@ button[type="submit"]:hover {
   }
 }
 
-/*Estilos a los links de enlace a cada API*/
+/* Estilos a los links de enlace a cada API */
+.column ul li a {
+    display: block; /* CAMBIO CLAVE: Hace que el enlace ocupe todo el ancho disponible del <li> */
+    width: 250px;   /* NUEVO: Define un ancho fijo para todos los enlaces. Ajusta este valor según necesites */
+    text-align: center; /* Opcional: Centra el texto dentro del ancho fijo */
 
- .column ul li a {
-            display: inline-block;
-            padding: 12px 25px;
-            margin-bottom: 10px;
-            background-color: #118534;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            z-index: 10;
-            position: relative;
-        }
+    padding: 12px 25px;
+    margin-bottom: 10px;
+    background-color: #118534; /* Verde original */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 10;
+    position: relative; /* Mantenemos por el translateY */
+}
 
-        .column ul li a:hover {
-            background-color: #534CAF;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
+.column ul li a:hover {
+    background-color: #534CAF; /* Color de fondo al pasar el cursor (azul/morado) */
+    color: #f0f0f0; /* Opcional: Un blanco un poco más oscuro o un gris claro al pasar el cursor */
+    transform: translateY(-3px); /* Efecto de levantamiento */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
-        .column ul li a:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            background-color: #433D8B;
-        }
+.column ul li a:active {
+    transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+    background-color: #433D8B; /* Color de fondo al hacer clic (azul más oscuro) */
+    color: white; /* Mantenemos el blanco al hacer clic */
+}
