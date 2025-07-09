@@ -62,7 +62,7 @@ document.getElementById('produccion-form').addEventListener('submit', (event) =>
 
     // Realizar la solicitud al servidor
     // ¡CAMBIO CLAVE AQUÍ! Usamos la ruta relativa.
-    fetch(`${window.location.origin}/api/produccion-solar`, {
+    fetch('/api/produccion-solar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
