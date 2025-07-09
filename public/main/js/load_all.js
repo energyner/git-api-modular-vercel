@@ -29,9 +29,9 @@ function loadHTML(url, elementId) {
 
 function loadAll() {
   const elements = [
-    { url: "./../../../../../energyner/git-api-modular-vercel/public/main/html/menu.html", id: "nav1" },
-    { url: "./../../../../../energyner/git-api-modular-vercel/public/main/html/dropdown.html", id: "nav2" },
-    { url: "./../../../../../energyner/git-api-modular-vercel/public/main/html/footer.html",  id: "footer",
+    { url: "/main/html/menu.html", id: "nav1" },
+    { url: "/main/html/dropdown.html", id: "nav2" },
+    { url: "/main/html/footer.html",  id: "footer",
     },
   ];
 
