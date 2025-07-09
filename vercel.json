@@ -2,13 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/index.html", 
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public"
-      }
-    },
-    {
       "src": "api/*.mjs",
       "use": "@vercel/node"
     }
@@ -30,7 +23,11 @@
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ] }
+  ]
+}
+
+
+
 
 
 
