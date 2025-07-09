@@ -20,6 +20,10 @@
       "dest": "/api/solar-server.mjs"
     },
     {
+      "src": "^/$",
+      "dest": "/public/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/$1"
     }
