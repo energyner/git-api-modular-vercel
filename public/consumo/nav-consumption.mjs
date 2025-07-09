@@ -118,7 +118,7 @@ document.getElementById("consumo-form").addEventListener("submit", (event) => {
   resultadoConsumo.textContent = ""; // Limpiar resultados previos
 
   // Enviar la solicitud al backend serverless
-  fetch("/api/consumo-energetico", {
+  fetch("/api/consumo-server", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
