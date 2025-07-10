@@ -77,7 +77,7 @@ document.getElementById("produccion-form").addEventListener("submit", (event) =>
   resultadoSolar.textContent = "";
 
   // Solicitud al microservicio serverless
-  fetch("/api/produccion-solar", {
+  fetch("/api/solar-server.mjs", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
