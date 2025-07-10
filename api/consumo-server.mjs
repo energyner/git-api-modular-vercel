@@ -36,7 +36,7 @@
 
 
 
-//DESPLIEGE EN LA NUBE EN LA PLATAFORMA VERCEL
+//2- DESPLIEGE EN LA NUBE EN LA PLATAFORMA VERCEL
 /**Eliminar express y app.listen del servidor para convertirlo en una función
  * handler pura compatible con Vercel. También ajustar la lógica de frontend para mejorar
  * validación, visualización y compatibilidad.*/
