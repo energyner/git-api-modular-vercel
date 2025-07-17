@@ -41,7 +41,7 @@ document.getElementById("calcular").addEventListener("click", async function (ev
   submitBtn.textContent = "Calculando...";
 
   try {
-    const response = await fetch("/api/huella-carbono", {
+    const response = await fetch("/api/footprint-server", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
