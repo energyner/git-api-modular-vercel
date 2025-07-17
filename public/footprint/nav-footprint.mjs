@@ -7,7 +7,7 @@
 
 
 //2- API huella-carbono para despliegue online en Vercel
-
+T
 
 document.getElementById("calcular").addEventListener("click", async function (event) {
   event.preventDefault();
