@@ -55,7 +55,7 @@ app.post("/api/huella-carbono", (req, res) => {
   }
 });
 
-// 🔁 Escuchar en el puerto que Render asigna
+// Escuchar en el puerto que Render asigna
 const PORT = process.env.PORT || 3008;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(` API de huella de carbono corriendo en http://localhost:${PORT}`);
