@@ -61,6 +61,8 @@
 //   console.log(` API de huella de carbono corriendo en http://localhost:${PORT}`);
 // });
 
+// api/huella-carbono.mjs
+import { calcularHuellaCarbono } from '../calculations/carbon-footprint.mjs';
 
 export default function handler(req, res) {
   console.log("Procesando huella-carbono desde Vercel");
